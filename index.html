@@ -1,19 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tea House Practice</title>
+    <!-- tailwind and daisyUI link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- manrope font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- font awasome -->
+
+    <script src="https://kit.fontawesome.com/85ae9c58a1.js" crossorigin="anonymous"></script>
+
+    <!-- style section -->
+    <style>
+        .font-manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
 </head>
-<body>
+
+<body class="font-manrope container mx-auto lg:px-24">
     <header>
-        
+        <div class="flex flex-col lg:flex-row p-4 gap-4">
+            <div class="space-y-4">
+                <h1 class=" text-4xl lg:text-6xl font-extrabold lg:leading-[100px] ">It's good
+                <br>
+                    tea time at The
+                <br>
+                    Tea House
+                </h1>
+                <p class="font-medium leading-9 opacity-90">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your
+                    Taste Buds.</p>
+                <button style="background: var(--Linear, linear-gradient(270deg, #F00 0%, #FF8938 100%));" class="btn">Explore More</button>
+            </div>
+            <div class="relative">
+                <img class="pt-10" src="./images/banner.png" alt="">
+                <div class="flex justify-center items-center gap-4 rounded-2xl w-64 h-24 bg-white absolute bottom-3 left-5 shadow-md">
+                    <i class="text-amber-500 text-3xl fa-solid fa-star"></i>
+                    <div>
+                        <h2 class="font-extrabold text-3xl">5.00</h2>
+                        <p class="opacity-90">Trust Pilot Ratings</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
     <main>
-
+        <!-- products features -->
+        <section >
+            <div class="text-center m-20">
+                <h2 class="text-5xl font-extrabold ">Our Featured Products</h2>
+                <p class="font-medium opacity-90 pt-6">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+            </div>
+        </section>
     </main>
     <footer>
 
     </footer>
 </body>
+
 </html>
